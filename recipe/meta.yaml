@@ -1,5 +1,5 @@
-{% set version = "0.4.4" %}
-{% set sha256 = "50f9c1d9ce34e57f5b13ef76d5c87e06de9804b8dfe1c34c4ba73197200f878a" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "b716ff0330c41ceee6cd2bbdc696d308543096c00a7b27492abd8a5ee07f86ee" %}
 
 package:
     name: qtawesome
@@ -12,7 +12,7 @@ source:
 
 build:
     noarch: python
-    number: 1
+    number: 0
     script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
