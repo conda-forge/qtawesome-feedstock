@@ -1,5 +1,5 @@
-{% set version = "0.5.0" %}
-{% set sha256 = "b716ff0330c41ceee6cd2bbdc696d308543096c00a7b27492abd8a5ee07f86ee" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "41add5ad15659f461451afe0fb2d9eaef0294eb1067ab517b86a973e1df7c696" %}
 
 package:
     name: qtawesome
