@@ -1,43 +1,41 @@
 {% set version = "0.5.1" %}
-{% set sha256 = "41add5ad15659f461451afe0fb2d9eaef0294eb1067ab517b86a973e1df7c696" %}
 
 package:
-    name: qtawesome
-    version: {{ version }}
+  name: qtawesome
+  version: {{ version }}
 
 source:
-    fn: qtawesome-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
+  sha256: 41add5ad15659f461451afe0fb2d9eaef0294eb1067ab517b86a973e1df7c696
 
 build:
-    noarch: python
-    number: 0
-    script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-    host:
-        - python
-        - pip
-        - setuptools
-    run:
-        - six
-        - python
-        - qtpy
+  host:
+    - python
+    - pip
+  run:
+    - six
+    - python
+    - qtpy
 
 test:
-    requires:
-        - pyqt
-    imports:
-        - qtawesome
+  requires:
+    - pyqt
+  imports:
+    - qtawesome
 
 about:
-    home: https://github.com/spyder-ide/qtawesome
-    license: MIT
-    summary: Iconic fonts in PyQt and PySide applications
+  home: https://github.com/spyder-ide/qtawesome
+  license: MIT
+  license_file: LICENSE
+  summary: Iconic fonts in PyQt and PySide applications
 
 extra:
-    recipe-maintainers:
-        - SylvainCorlay
-        - goanpeca
-        - ccordoba12
+  recipe-maintainers:
+    - SylvainCorlay
+    - goanpeca
+    - ccordoba12
