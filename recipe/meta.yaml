@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: qtawesome
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
-  sha256: 41add5ad15659f461451afe0fb2d9eaef0294eb1067ab517b86a973e1df7c696
+  sha256: f415688877b65822d65cb2d9e9e198b37992f4e0ce7778439d14fbea6b4fb4ac
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
