@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: qtawesome
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
-  sha256: d81f1ce7d7b3d0278e24355f32be5e617eed17574699ee6d5c2791fe21a891f0
+  sha256: 489e69c2d1ad32bf92d0b0062bfe7b0a9241bc64092650b4b25f418abeb136cd
 
 build:
   number: 0
@@ -31,7 +31,7 @@ test:
 about:
   home: https://github.com/spyder-ide/qtawesome
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: Iconic fonts in PyQt and PySide applications
 
 extra:
