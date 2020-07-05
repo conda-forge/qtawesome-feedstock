@@ -118,5 +118,4 @@ Feedstock Maintainers
 
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@ccordoba12](https://github.com/ccordoba12/)
-* [@goanpeca](https://github.com/goanpeca/)
 
