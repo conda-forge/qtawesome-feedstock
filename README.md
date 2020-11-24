@@ -5,11 +5,9 @@ Home: https://github.com/spyder-ide/qtawesome
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qtawesome-feedstock/blob/master/LICENSE.txt)
 
 Summary: Iconic fonts in PyQt and PySide applications
-
-
 
 Current build status
 ====================

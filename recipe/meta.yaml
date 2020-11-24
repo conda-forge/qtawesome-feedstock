@@ -9,7 +9,7 @@ source:
   sha256: d612a313e531966d17f5a8fb7604faba961cf7ce3c77a9168c6f60e60140b767
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -18,7 +18,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - qtpy
 
 test:
