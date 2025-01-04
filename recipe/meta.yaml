@@ -5,25 +5,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/q/qtawesome/QtAwesome-{{ version }}.tar.gz
   sha256: 075b2c9ee01cbaf5e3a4bebed0e5529ee8605981355f21dea051b15c1b869e1b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - qtpy
 
 test:
   requires:
     - pyqt
+    - python {{ python_min }}
   imports:
     - qtawesome
 
