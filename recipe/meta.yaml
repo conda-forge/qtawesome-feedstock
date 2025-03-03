@@ -9,9 +9,12 @@ source:
   sha256: 783e414d1317f3e978bf67ea8e8a1b1498bad9dbd305dec814027e3b50521be6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  entry_points:
+    - qta-browser = qtawesome.icon_browser:run
+    - qta-install-fonts-all-users = qtawesome:install_bundled_fonts_system_wide
 
 requirements:
   host:
